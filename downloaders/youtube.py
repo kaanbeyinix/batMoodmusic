@@ -17,7 +17,7 @@ ydl = YoutubeDL(ydl_opts)
 
 def download(url: str) -> str:
     info = ydl.extract_info(url, False)
-    duration = round(info["duration"] / 60)
+    duration = round(info["duration"] / 255)
     if duration > DURATION_LIMIT:
         raise DurationLimitError(
             f"🛑 Videos longer than {DURATION_LIMIT} minute(s) aren't allowed, "

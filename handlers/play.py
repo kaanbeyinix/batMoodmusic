@@ -92,7 +92,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 async def cls(_, query: CallbackQuery):
     await query.message.delete()
 
-# EfsaneMusicVaves düzenlenmiştir.
+# 𝗯𝗮𝘁𝗠𝗼𝗼𝗱 𝗠𝘂𝘀𝗶𝗰 düzenlenmiştir.
 
 @Client.on_message(command(["play", "oynat"]) 
                    & filters.group
@@ -109,7 +109,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "EfsaneMusicVaves"
+        user.first_name = "𝗯𝗮𝘁𝗠𝗼𝗼𝗱 𝗠𝘂𝘀𝗶𝗰"
     usar = user
     wew = usar.id
     try:
@@ -198,7 +198,7 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("https://t.me/sohbetyesilyoll", url=f"https://t.me/sohbetyesilyoll"),
+                InlineKeyboardButton("𝗯𝗮𝘁𝗠𝗼𝗼𝗱 𝗠𝘂𝘀𝗶𝗰 𝖲𝗎𝗉𝗉𝗈𝗋𝗍", url=f"https://t.me/sohbetyesilyoll"),
             ],
         ]
     )
@@ -260,12 +260,12 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("https://t.me/sohbetyesilyoll", url=f"https://t.me/sohbetyesilyoll"),
+                InlineKeyboardButton("𝗯𝗮𝘁𝗠𝗼𝗼𝗱 𝗠𝘂𝘀𝗶𝗰 𝖲𝗎𝗉𝗉𝗈𝗋𝗍", url=f"https://t.me/sohbetyesilyoll"),
             ],
         ]
     )
         
-        if (dur / 255) > DURATION_LIMIT:
+        if (dur / 60) > DURATION_LIMIT:
              await lel.edit(f"•> **Daha uzun videolar {DURATION_LIMIT} dakikaların oynatılamasına izin verilmez** !")
              return
         requested_by = message.from_user.first_name
