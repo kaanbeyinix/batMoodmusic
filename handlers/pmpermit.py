@@ -1,4 +1,4 @@
-﻿from pyrogram import Client
+from pyrogram import Client
 import asyncio
 from config import SUDO_USERS
 from config import PMPERMIT
@@ -18,7 +18,7 @@ async def pmPermit(client: USER, message: Message):
                 return
             await USER.send_message(
                 message.chat.id,
-                "**Merhaba, Müzik asistanı hizmetidir**.\n [Destek Grubu](https://t.me/yesilyolsohbet)\n",
+                "**Merhaba, Müzik asistanı hizmetidir**.\n [🧑🏻‍💻 Developer](https://t.me/sohbetyesilyoll)\n",
             )
             return
  
